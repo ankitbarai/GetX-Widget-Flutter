@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:get/get_core/src/get_main.dart';
+import 'package:getx_widget_flutter/setting_screen.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -19,28 +20,36 @@ class _HomeScreenState extends State<HomeScreen> {
         backgroundColor: Colors.tealAccent,
       ),
 
-      body: Center(
-        child: GestureDetector(
-          onTap: () {
-            Get.snackbar(
-              "Learn Flutter",
-              "I am Learning Flutter with GetX Package",
-              snackPosition: SnackPosition.TOP,
-              backgroundColor: Colors.blue[300],
-              colorText: Colors.white,
-              borderRadius: 10,
-              margin: EdgeInsets.all(15),
-              duration: Duration(seconds: 3),
-              icon: Icon(Icons.info, color: Colors.white,),
-            );
-          },
-          child: Container(
-            height: Get.height * 0.4,
-            width: Get.width * 0.8,
-            color: Colors.amber,
-          ),
-        ),
-        ),
+      body: Column(
+        children: [
+          Center(
+            child: GestureDetector(
+              onTap: () {
+                Get.snackbar(
+                  "Learn Flutter",
+                  "I am Learning Flutter with GetX Package",
+                  snackPosition: SnackPosition.TOP,
+                  backgroundColor: Colors.blue[300],
+                  colorText: Colors.white,
+                  borderRadius: 10,
+                  margin: EdgeInsets.all(15),
+                  duration: Duration(seconds: 3),
+                  icon: Icon(Icons.info, color: Colors.white,),
+                );
+              },
+              child: Container(
+                height: Get.height * 0.4,
+                width: Get.width * 0.8,
+                color: Colors.amber,
+              ),
+            ),
+            ),
+          ElevatedButton(
+              onPressed: (){
+                Get.to(() => SettingScreen());
+              }, child: Text("Go to Setting Screen"))
+        ],
+      ),
       );
   }
 }
