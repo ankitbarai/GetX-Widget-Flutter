@@ -22,3 +22,6 @@ create a file named app-routes there create a class AppRoutes and define static 
 then create getPages list to define all the routes in the app
 then use as follows to navigate between screens
 Get.toNamed('/second'); // to navigate to second screen
+inside toNamed() use arguments to pass data between screens
+Iin agruments you can pass any data type like string,int,map,list or even object of a class
+to receive the data on the second screen use Get.arguments
