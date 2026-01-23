@@ -16,3 +16,9 @@ It takes a widget,use container to make the bottomsheet beautiful and customize 
 use Get.to() to navigate to another screen
 use Get.back() to go back to previous screen
 use Get.off() to navigate to another screen and remove the previous screen from the stack
+
+navigation with named routes using getx
+create a file named app-routes there create a class AppRoutes and define static constant strings for each route
+then create getPages list to define all the routes in the app
+then use as follows to navigate between screens
+Get.toNamed('/second'); // to navigate to second screen
