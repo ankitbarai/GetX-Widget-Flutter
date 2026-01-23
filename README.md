@@ -7,3 +7,5 @@ to set width ==> Get.width*.8 (80% of the screen)
 
 Get.snackbar("title", "message"); // you can use various properties to make this snackbar beautiful, you can call the snackbar either
 from top or bottoom
+
+Get.defaultdialog() ==> used to show dialog box and you can customize it as per your need and it helps to create a very beautiful interface

@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:getx_widget_flutter/home_screen.dart';
 
+import 'getx_dialog_box.dart';
+
 void main() {
   runApp( MyApp());
 }
@@ -18,7 +20,8 @@ class MyApp extends StatelessWidget {
 
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
       ),
-      home: HomeScreen(),
+      // home: HomeScreen(),
+      home: BottomSheetScreen(),
     );
   }
 }
