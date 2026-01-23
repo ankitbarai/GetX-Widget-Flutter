@@ -34,7 +34,8 @@ class _DialogBoxScreenState extends State<DialogBoxScreen> {
                 onPressed: () {
                   Get.back();
                 },
-                child: Text("OK"),)
+                child: Text("OK"),
+              )
             );
           }, child: Text("Open Dialog"),),
       ),

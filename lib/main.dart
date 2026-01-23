@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:getx_widget_flutter/home_screen.dart';
+import 'package:getx_widget_flutter/routes.dart';
 
 import 'getx_bottomsheet.dart';
 import 'getx_dialog_box.dart';
@@ -22,9 +23,11 @@ class MyApp extends StatelessWidget {
 
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
       ),
-      home: HomeScreen(),
+      // home: HomeScreen(),
       // home: DialogBoxScreen(),
       // home: BottomSheetScreen(),
+      initialRoute: RoutePages.home,
+      getPages: getpages,
     );
   }
 }

@@ -48,7 +48,8 @@ class _BottomSheetScreenState extends State<BottomSheetScreen> {
                 )
               );
             },
-          child: Text("Open BottomSheet"),),
+          child: Text("Open BottomSheet"),
+        ),
       ),
     );
   }

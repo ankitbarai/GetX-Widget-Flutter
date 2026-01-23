@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:get/get_core/src/get_main.dart';
-import 'package:getx_widget_flutter/setting_screen.dart';
+import 'package:getx_widget_flutter/routes.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -19,7 +18,6 @@ class _HomeScreenState extends State<HomeScreen> {
         centerTitle: true,
         backgroundColor: Colors.tealAccent,
       ),
-
       body: Column(
         children: [
           Center(
@@ -46,8 +44,9 @@ class _HomeScreenState extends State<HomeScreen> {
             ),
           ElevatedButton(
               onPressed: (){
-                Get.to(() => SettingScreen());
-              }, child: Text("Go to Setting Screen"))
+                Get.toNamed(RoutePages.dialogboxpage);
+              }, child: Text("Go to Setting Screen")
+          )
         ],
       ),
       );
