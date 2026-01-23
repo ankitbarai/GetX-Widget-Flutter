@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
-class BottomSheetScreen extends StatefulWidget {
-  const BottomSheetScreen({super.key});
+class DialogBoxScreen extends StatefulWidget {
+  const DialogBoxScreen({super.key});
 
   @override
-  State<BottomSheetScreen> createState() => _BottomSheetScreenState();
+  State<DialogBoxScreen> createState() => _DialogBoxScreenState();
 }
 
-class _BottomSheetScreenState extends State<BottomSheetScreen> {
+class _DialogBoxScreenState extends State<DialogBoxScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(

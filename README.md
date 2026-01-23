@@ -9,3 +9,6 @@ Get.snackbar("title", "message"); // you can use various properties to make this
 from top or bottoom
 
 Get.defaultdialog() ==> used to show dialog box and you can customize it as per your need and it helps to create a very beautiful interface
+
+Get.bottomsheet() ==> used to show bottom sheet and you can customize it as per your need and it helps to create a very beautiful interface
+It takes a widget,use container to make the bottomsheet beautiful and customize it as per your need
